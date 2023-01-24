@@ -441,7 +441,10 @@
         },
         "runtime": {
           "bin/placeholder/FreeCourse.Shared.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
