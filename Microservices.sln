@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{54
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{BFAC9083-49E0-4BA1-988D-E021501B40DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Catalog", "Services\Catalog\FreeCourse.Services.Catalog\FreeCourse.Services.Catalog.csproj", "{8970E805-D04B-4557-AA74-002A61FC976A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.Services.Catalog", "Services\Catalog\FreeCourse.Services.Catalog\FreeCourse.Services.Catalog.csproj", "{8970E805-D04B-4557-AA74-002A61FC976A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B30730A-15F9-4F07-AF04-52586F6292BA}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{98CD7CC0-B705-438F-9B3D-570724AFD215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Shared", "Shared\FreeCourse.Shared\FreeCourse.Shared.csproj", "{00AEF516-9F5A-425A-A9E3-B8DB4BB27735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{8970E805-D04B-4557-AA74-002A61FC976A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8970E805-D04B-4557-AA74-002A61FC976A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8970E805-D04B-4557-AA74-002A61FC976A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AEF516-9F5A-425A-A9E3-B8DB4BB27735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AEF516-9F5A-425A-A9E3-B8DB4BB27735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AEF516-9F5A-425A-A9E3-B8DB4BB27735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AEF516-9F5A-425A-A9E3-B8DB4BB27735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +39,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BFAC9083-49E0-4BA1-988D-E021501B40DB} = {54F3DD14-80CE-4927-A56C-19421DC1179F}
 		{8970E805-D04B-4557-AA74-002A61FC976A} = {BFAC9083-49E0-4BA1-988D-E021501B40DB}
+		{00AEF516-9F5A-425A-A9E3-B8DB4BB27735} = {98CD7CC0-B705-438F-9B3D-570724AFD215}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F9DEEC9-62CB-49DB-8BB0-DE57AFE7AB32}
