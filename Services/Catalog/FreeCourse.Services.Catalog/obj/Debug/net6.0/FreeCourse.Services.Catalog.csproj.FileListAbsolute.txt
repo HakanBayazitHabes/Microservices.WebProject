@@ -119,3 +119,4 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\S
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Catalog\FreeCourse.Services.Catalog\obj\Debug\net6.0\FreeCourse.Services.Catalog.csproj.CopyComplete
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Catalog\FreeCourse.Services.Catalog\obj\Debug\net6.0\FreeCourse.Services.Catalog.genruntimeconfig.cache
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Catalog\FreeCourse.Services.Catalog\obj\Debug\net6.0\ref\FreeCourse.Services.Catalog.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Catalog\FreeCourse.Services.Catalog\obj\Debug\net6.0\FreeCourse.Services.Catalog.MvcApplicationPartsAssemblyInfo.cs
