@@ -2,6 +2,6 @@
 {
     public class Feature
     {
-        public string Duration { get; set; }
+        public int Duration { get; set; }
     }
 }
