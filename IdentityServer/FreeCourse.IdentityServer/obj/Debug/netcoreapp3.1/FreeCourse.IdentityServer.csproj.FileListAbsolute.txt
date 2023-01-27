@@ -140,3 +140,5 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\I
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\FreeCourse.Shared.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\FreeCourse.Shared.pdb
