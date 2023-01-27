@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.JsonWebTokens;
 using System.Linq;
 using System.Threading.Tasks;
 using static IdentityServer4.IdentityServerConstants;
@@ -44,5 +45,30 @@ namespace FreeCourse.IdentityServer.Controllers
             return NoContent();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetUser()
+        {
+            var userIdClaim = User.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Sub);
+
+            if (userIdClaim == null)
+            {
+                return BadRequest(Response<NoContent>.Fail("Kullanıcı bulunamadı", 404));
+            }
+
+            var user = await _userManager.FindByIdAsync(userIdClaim.Value);
+
+            if (user == null)
+            {
+                return BadRequest(Response<NoContent>.Fail("Kullanıcı bulunamadı", 404));
+            }
+
+            return Ok(new
+            {
+                user.Id,
+                user.UserName,
+                user.Email,
+                user.City
+            });
+        }
     }
 }
