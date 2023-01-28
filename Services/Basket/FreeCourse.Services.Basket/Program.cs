@@ -5,13 +5,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //Burada gelen token'ýnda userýn authenticate olmasý gerekmektedir. Bunu filter içerisine atacaðýz. AddContollers içerisinde 
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-
+//Token içerisinde gelen sub key'ini overload yapmaz
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.Authority = builder.Configuration["IdentityServerUrl"];
