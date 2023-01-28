@@ -1,7 +1,6 @@
 ﻿using FreeCourse.Services.PhotoStock.Dtos;
 using FreeCourse.Shared.ControllerBases;
 using FreeCourse.Shared.Dtos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FreeCourse.Services.PhotoStock.Controllers
