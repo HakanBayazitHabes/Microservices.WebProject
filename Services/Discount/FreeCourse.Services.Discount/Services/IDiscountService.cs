@@ -9,7 +9,7 @@ namespace FreeCourse.Services.Discount.Services
         Task<Response<Model.Discount>> GetById(int id);
         Task<Response<NoContent>> Save(Model.Discount discount);
         Task<Response<NoContent>> Update(Model.Discount discount);
-        Task<Response<NoContent>> DeleteById(int id);
+        Task<Response<NoContent>> Delete(int id);
         Task<Response<Model.Discount>> GetByCodeAndUserId(string code, string userId);
     }
 }
