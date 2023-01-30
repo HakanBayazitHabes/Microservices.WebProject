@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JrCkUMz6oIlhYcdQLBSOAdHZL85YE/8WXCJZ3njxlDw=",
+  "Hash": "mXaLwf9bl50LJiX2NQTKq6uJuApsquhtIcqen9azBtk=",
   "Source": "FreeCourse.Services.PhotoStock",
   "BasePath": "_content/FreeCourse.Services.PhotoStock",
   "Mode": "Default",
@@ -15,23 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\HakanBayaztHabes_warrior_panda_reality__4k_c536884c-bf3e-4ab8-9b7c-d1fb5fffee79.png",
-      "SourceId": "FreeCourse.Services.PhotoStock",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\",
-      "BasePath": "_content/FreeCourse.Services.PhotoStock",
-      "RelativePath": "photos/HakanBayaztHabes_warrior_panda_reality__4k_c536884c-bf3e-4ab8-9b7c-d1fb5fffee79.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\photos\\HakanBayaztHabes_warrior_panda_reality__4k_c536884c-bf3e-4ab8-9b7c-d1fb5fffee79.png"
-    }
-  ]
+  "Assets": []
 }

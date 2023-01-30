@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "p2JfMx0uI3vh87lWiWsI84k3DuvPYM8SfJJ4BtCAEA8=",
+  "Source": "FreeCourse.Services.Order.API",
+  "BasePath": "_content/FreeCourse.Services.Order.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

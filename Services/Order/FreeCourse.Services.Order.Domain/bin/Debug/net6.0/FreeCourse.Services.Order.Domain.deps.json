@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FreeCourse.Services.Order.Domain/1.0.0": {
+        "dependencies": {
+          "FreeCourse.Services.Order.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "FreeCourse.Services.Order.Domain.dll": {}
+        }
+      },
+      "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+        "runtime": {
+          "FreeCourse.Services.Order.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FreeCourse.Services.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
