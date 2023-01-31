@@ -15,3 +15,5 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\S
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Infrastructure\bin\Debug\net6.0\FreeCourse.Services.Order.Domain.pdb
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Infrastructure\bin\Debug\net6.0\FreeCourse.Services.Order.Domain.Core.pdb
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Infrastructure\obj\Debug\net6.0\FreeCourse.Services.Order.Infrastructure.csproj.CopyComplete
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Infrastructure\bin\Debug\net6.0\FreeCourse.Services.Order.Infrastructure.runtimeconfig.json
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Infrastructure\obj\Debug\net6.0\FreeCourse.Services.Order.Infrastructure.genruntimeconfig.cache

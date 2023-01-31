@@ -17,3 +17,5 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\S
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net6.0\FreeCourse.Services.Order.Infrastructure.pdb
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net6.0\FreeCourse.Services.Order.Domain.Core.pdb
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net6.0\FreeCourse.Services.Order.Application.csproj.CopyComplete
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net6.0\FreeCourse.Shared.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net6.0\FreeCourse.Shared.pdb
