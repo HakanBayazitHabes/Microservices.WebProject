@@ -34,9 +34,6 @@
             "projectReferences": {
               "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\Order\\FreeCourse.Services.Order.Application\\FreeCourse.Services.Order.Application.csproj": {
                 "projectPath": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\Order\\FreeCourse.Services.Order.Application\\FreeCourse.Services.Order.Application.csproj"
-              },
-              "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj"
               }
             }
           }
