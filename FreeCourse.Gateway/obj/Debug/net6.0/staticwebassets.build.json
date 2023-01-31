@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ev+XK93vFSmuIP3ZWnk7r7QUnJ1J/L8Pqx3pWy7/Ras=",
+  "Source": "FreeCourse.Gateway",
+  "BasePath": "_content/FreeCourse.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
