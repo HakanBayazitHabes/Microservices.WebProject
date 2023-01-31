@@ -30,3 +30,12 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\S
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\obj\Debug\net6.0\FreeCourse.Services.FakePayment.pdb
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\obj\Debug\net6.0\FreeCourse.Services.FakePayment.genruntimeconfig.cache
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\obj\Debug\net6.0\ref\FreeCourse.Services.FakePayment.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\FreeCourse.Shared.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\FreeCourse.Shared.pdb
