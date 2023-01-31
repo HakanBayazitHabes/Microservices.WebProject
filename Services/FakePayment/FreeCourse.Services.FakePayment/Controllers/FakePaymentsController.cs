@@ -10,7 +10,7 @@ namespace FreeCourse.Services.FakePayment.Controllers
     public class FakePaymentsController : CustomBaseController
     {
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult ReceivePayment()
         {
             return CreateActionResultInstance(Response<NoContent>.Success(200));
