@@ -17,7 +17,7 @@ JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.Authority = builder.Configuration["IdentityServerUrl"];
-    options.Audience = "resource_basket";
+    options.Audience = "resource_order";
     options.RequireHttpsMetadata = false;
 });
 
