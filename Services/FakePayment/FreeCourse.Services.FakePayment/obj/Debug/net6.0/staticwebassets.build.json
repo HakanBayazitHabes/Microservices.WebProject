@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Y8iqakuQLHZH0aFKN/kYPsrUH2+RsORr7ahtxwa06/M=",
+  "Source": "FreeCourse.Services.FakePayment",
+  "BasePath": "_content/FreeCourse.Services.FakePayment",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
