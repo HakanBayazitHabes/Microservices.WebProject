@@ -65,7 +65,7 @@ namespace FreeCourse.Web.Services
                 Address = disco.TokenEndpoint
             };
 
-            //response gönderip request alıyoruz
+            //response gönderip request dönüyor. Token alıyoruz
             var token = await _httpClient.RequestPasswordTokenAsync(passwordTokenRequest);
 
             if (token.IsError)
