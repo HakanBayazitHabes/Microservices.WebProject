@@ -7,37 +7,41 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <h5 class="card-title">Kurslar</h5>
-            @if (Model.Any())
-            {
-                <table class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Resim</th>
-                            <th>Kurs İsmi</th>
-                            <th>Fiyat</th>
-                            <th>Süre</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
+            <div class="card-body">
+                <h5 class="card-title">Kurslar</h5>
+                <a asp-controller="Courses" asp-action="Create" class="btn btn-primary mb-3">Kurs oluştur</a>
+                @if (Model.Any())
+                {
+                    <table class="table table-striped table-bordered">
+                        <thead>
                             <tr>
-                                <td>@item.Name</td>
-                                <td>@item.Price</td>
-                                <td>@item.Feature.Duration</td>
+                                <th>Resim</th>
+                                <th>Kurs İsmi</th>
+                                <th>Fiyat</th>
+                                <th>Süre</th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Feature.Duration</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
 
-            }
-            else
-            {
-                <div class="alert alert-info">
-                    Kayıtlı kurs bulunamadı
-                </div>
-            }
+                }
+                else
+                {
+                    <div class="alert alert-info">
+                        Kayıtlı kurs bulunamadı
+                    </div>
+                }
+            </div>
+
         </div>
     </div>
 </div>
