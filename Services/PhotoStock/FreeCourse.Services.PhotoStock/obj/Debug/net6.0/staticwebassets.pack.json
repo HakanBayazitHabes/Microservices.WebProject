@@ -1,16 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\21b37d02-d41c-4ff1-841c-43fe3bb55cc3.jpg",
-      "PackagePath": "staticwebassets\\photos\\21b37d02-d41c-4ff1-841c-43fe3bb55cc3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\d56a15e1-e566-43cc-9e5e-7b3e514fc0d6.jpg",
-      "PackagePath": "staticwebassets\\photos\\d56a15e1-e566-43cc-9e5e-7b3e514fc0d6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\df84a0ef-31c2-4a55-afcf-746ae70c5186.jpg",
-      "PackagePath": "staticwebassets\\photos\\df84a0ef-31c2-4a55-afcf-746ae70c5186.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\fab2af4a-bd51-411d-a953-08c45b9c2aa9.jpg",
+      "PackagePath": "staticwebassets\\photos\\fab2af4a-bd51-411d-a953-08c45b9c2aa9.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FreeCourse.Services.PhotoStock.Microsoft.AspNetCore.StaticWebAssets.props",
