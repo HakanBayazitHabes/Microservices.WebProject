@@ -1,4 +1,5 @@
-﻿using FreeCourse.Web.Models.PhotoStock;
+﻿using FreeCourse.Shared.Dtos;
+using FreeCourse.Web.Models.PhotoStock;
 using FreeCourse.Web.Services.Interface;
 
 namespace FreeCourse.Web.Services
@@ -14,7 +15,7 @@ namespace FreeCourse.Web.Services
 
         public async Task<bool> DeletePhoto(string photoUrl)
         {
-            var response =await _httpClient.DeleteAsync($"photos?photoUrl={photoUrl}");
+            var response = await _httpClient.DeleteAsync($"photos?photoUrl={photoUrl}");
             return response.IsSuccessStatusCode;
         }
 
@@ -37,8 +38,14 @@ namespace FreeCourse.Web.Services
 
             var response = await _httpClient.PostAsync("photos", multipartContent);
 
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
 
-            return await response.Content.ReadFromJsonAsync<PhotoViewModel>();
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<PhotoViewModel>>();
+
+            return responseSuccess.Data;
             /*
             if (response.IsSuccessStatusCode)
             {
