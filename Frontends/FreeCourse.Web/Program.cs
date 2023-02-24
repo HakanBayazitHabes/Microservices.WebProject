@@ -1,4 +1,5 @@
 using FreeCourse.Shared.Services;
+using FreeCourse.Web.Extensions;
 using FreeCourse.Web.Handler;
 using FreeCourse.Web.Helpers;
 using FreeCourse.Web.Models;
@@ -17,29 +18,12 @@ builder.Services.AddSingleton<PhotoHelper>();
 //IClientAccessTokenCache servisini DI'da geçmemizi saðlýyor.
 builder.Services.AddAccessTokenManagement();
 builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
-var serviceApiSettings = builder.Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
-builder.Services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
 
 builder.Services.AddScoped<ResourceOwnerPasswordTokenHandler>();
 builder.Services.AddScoped<ClientCredentialTokenHandler>();
-builder.Services.AddHttpClient<IIdentityService, IdentityService>();
 
-builder.Services.AddHttpClient<ICatalogService, CatalogService>(opt =>
-{
-    opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
-}).AddHttpMessageHandler<ClientCredentialTokenHandler>();
-
-builder.Services.AddHttpClient<IPhotoStockService, PhotoStockService>(opt =>
-{
-    opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.PhotoStock.Path}");
-}).AddHttpMessageHandler<ClientCredentialTokenHandler>();
-
-builder.Services.AddHttpClient<IUserService, UserService>(opt =>
-{
-    opt.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
-
+builder.Services.AddHttpClientServices(builder);
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
 {
