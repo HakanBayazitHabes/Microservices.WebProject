@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Du3zHmPdWDX9h76IBhG0PuHsmuTmRJXFkjzwGK1Uzl8=",
+  "Hash": "sWKoX5XbVH/t8Yh0EI/4hg+9cxunaZPZNyr0/DtC8o0=",
   "Source": "FreeCourse.Services.PhotoStock",
   "BasePath": "_content/FreeCourse.Services.PhotoStock",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\fab2af4a-bd51-411d-a953-08c45b9c2aa9.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\photos\\5c16ff61-e44f-404a-aa6f-b7afd3643987.jpg",
       "SourceId": "FreeCourse.Services.PhotoStock",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\",
       "BasePath": "_content/FreeCourse.Services.PhotoStock",
-      "RelativePath": "photos/fab2af4a-bd51-411d-a953-08c45b9c2aa9.jpg",
+      "RelativePath": "photos/5c16ff61-e44f-404a-aa6f-b7afd3643987.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\photos\\fab2af4a-bd51-411d-a953-08c45b9c2aa9.jpg"
+      "OriginalItemSpec": "wwwroot\\photos\\5c16ff61-e44f-404a-aa6f-b7afd3643987.jpg"
     }
   ]
 }
