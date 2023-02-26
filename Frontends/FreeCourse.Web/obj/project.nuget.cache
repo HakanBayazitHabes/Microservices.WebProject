@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eje/VLGzPj8cKqG2wsacDVvg/2c0D8FAksHYRHSHR9eFTmKrpLfCN5UmZfoYGsaK0Ko0iRx/RAXoDALH4L8ELw==",
+  "dgSpecHash": "/bnTj/tZIulZOFDK5zbqYYUB8fi7msUMvy67mcDhPMl/iMGkCtIZyrcSspLHq5Hr/p/pzxqiDR3GTkjKXnMEQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\Software\\FatihCakırogluCore\\Microservices\\Microservices\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\identitymodel.aspnetcore\\4.3.0\\identitymodel.aspnetcore.4.3.0.nupkg.sha512",

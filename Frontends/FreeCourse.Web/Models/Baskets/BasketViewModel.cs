@@ -6,7 +6,7 @@
         public string DiscountCode { get; set; }
 
         public int? DiscountRate { get; set; }
-        private List<BasketItemViewModel> _basketItems { get; set; }
+        private List<BasketItemViewModel> basketItems { get; set; }
 
         public List<BasketItemViewModel> BasketItems
         {
@@ -15,23 +15,23 @@
                 if (HasDiscount)
                 {
                     //Örnek kurs fiyat 100 TL indirim 10%
-                    _basketItems.ForEach(x =>
+                    basketItems.ForEach(x =>
                     {
                         var discountPrice = x.Price * ((decimal)DiscountRate.Value / 100);
                         x.AppliedDiscount(Math.Round(x.Price - discountPrice, 2));
                     });
                 }
-                return BasketItems;
+                return basketItems;
             }
             set
             {
-                _basketItems = value;
+                basketItems = value;
             }
         }
 
         public decimal TotalPrice
         {
-            get => _basketItems.Sum(x => x.GetCurrentPrice);
+            get => basketItems.Sum(x => x.GetCurrentPrice);
         }
 
         public bool HasDiscount

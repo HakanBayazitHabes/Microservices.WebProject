@@ -42,12 +42,11 @@ namespace FreeCourse.Web.Controllers
 
             courseCreateInput.UserId = _sharedIdentityService.GetUserId;
 
-            courseCreateInput.Picture = "default.jpg";
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
 
-            //if (!ModelState.IsValid)
-            //{
-            //    return View();
-            //}
 
 
             await _catalogService.CreateCourseAsync(courseCreateInput);

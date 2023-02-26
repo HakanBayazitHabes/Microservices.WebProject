@@ -1,9 +1,11 @@
 ﻿using FreeCourse.Web.Models.Baskets;
 using FreeCourse.Web.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FreeCourse.Web.Controllers
 {
+    [Authorize]
     public class BasketController : Controller
     {
         private readonly ICatalogService _catalogService;

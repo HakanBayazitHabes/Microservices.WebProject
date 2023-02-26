@@ -258,3 +258,6 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\F
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\IdentityModel.AspNetCore.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Frontends\FreeCourse.Web\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
