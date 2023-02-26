@@ -47,8 +47,6 @@ namespace FreeCourse.Web.Controllers
                 return View();
             }
 
-
-
             await _catalogService.CreateCourseAsync(courseCreateInput);
 
             return RedirectToAction(nameof(Index));
