@@ -2,11 +2,16 @@
 {
     public class BasketViewModel
     {
+        public BasketViewModel()
+        {
+            _basketItems = new List<BasketItemViewModel>();
+        }
         public string UserId { get; set; }
         public string DiscountCode { get; set; }
 
         public int? DiscountRate { get; set; }
-        private List<BasketItemViewModel> basketItems { get; set; }
+
+        private List<BasketItemViewModel> _basketItems;
 
         public List<BasketItemViewModel> BasketItems
         {
@@ -15,28 +20,40 @@
                 if (HasDiscount)
                 {
                     //Örnek kurs fiyat 100 TL indirim 10%
-                    basketItems.ForEach(x =>
+                    _basketItems.ForEach(x =>
                     {
                         var discountPrice = x.Price * ((decimal)DiscountRate.Value / 100);
                         x.AppliedDiscount(Math.Round(x.Price - discountPrice, 2));
                     });
                 }
-                return basketItems;
+                return _basketItems;
             }
             set
             {
-                basketItems = value;
+                _basketItems = value;
             }
         }
 
         public decimal TotalPrice
         {
-            get => basketItems.Sum(x => x.GetCurrentPrice);
+            get => _basketItems.Sum(x => x.GetCurrentPrice);
         }
 
         public bool HasDiscount
         {
-            get => !string.IsNullOrEmpty(DiscountCode);
+            get => !string.IsNullOrEmpty(DiscountCode) && DiscountRate.HasValue;
+        }
+
+        public void CancelDiscount()
+        {
+            DiscountCode = null;
+            DiscountRate = null;
+        }
+
+        public void AppliedDiscount(string discountCode, int discountRate)
+        {
+            DiscountCode = discountCode;
+            DiscountRate = discountRate;
         }
     }
 }

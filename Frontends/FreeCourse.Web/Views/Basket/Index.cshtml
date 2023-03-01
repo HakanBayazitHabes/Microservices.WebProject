@@ -23,7 +23,10 @@
                         {
                             <tr>
                                 <td>@item.CourseName</td>
-                                <td>@item.GetCurrentPrice TL</td>
+                                <td>
+                                    @item.GetCurrentPrice TL @(
+                            Model.HasDiscount ? $"(%{Model.DiscountRate.Value} uygulandı)": "" )
+                                </td>
                                 <td>
                                     <a class="btn btn-danger" asp-controller="Basket" asp-action="RemoveBasketItem" asp-route-courseId="@item.CourseId">Sil</a>
                                 </td>
@@ -45,23 +48,30 @@
 
                     </table>
 
-                    <form  asp-controller="Basket" asp-action="ApplyDiscount">
+                    <form asp-controller="Basket" asp-action="ApplyDiscount">
                         @if (Model.HasDiscount)
                         {
                             <div class="alert alert-success">
                                 "@Model.DiscountCode" kodu ile indirim uygulandı."
+                                <a asp-controller="Basket" asp-action="CancelApplyDiscount">(İptal et)</a>
                             </div>
                         }
 
-                        @if (TempData.ContainsKey("discountStatus") != null && (bool)TempData.ContainsKey("discountStatus")==false)
+
+                        <div class="input-group mb-3">
+                            <input type="text" name="DiscountApplyInput.Code" class="form-control" />
+                            <button type="submit" class="btn btn-outline-secondary">Uygula</button>
+                        </div>
+                        @if (TempData["discountError"] != null)
+                            {
+                                <div class="text-danger">@TempData["discountError"]</div>
+                            }
+
+                        @if (TempData["discountStatus"] != null && (bool)TempData["discountStatus"] == false)
                         {
                             <div class="text-danger">indirim kodu geçersiz</div>
                         }
-                        <div class="input-group mb-3">
-                            <input type="text" name="DiscountApplyInput.Code" class="form-control"/>
-                            <div asp-validation-summary="All"></div>
-                            <button type="submit" class="btn btn-outline-secondary">Uygula</button>
-                        </div>
+
                     </form>
 
 

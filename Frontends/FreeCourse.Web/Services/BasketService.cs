@@ -1,4 +1,5 @@
 ﻿using FreeCourse.Shared.Dtos;
+using FreeCourse.Shared.Services;
 using FreeCourse.Web.Models.Baskets;
 using FreeCourse.Web.Services.Interface;
 
@@ -8,11 +9,13 @@ namespace FreeCourse.Web.Services
     {
         private readonly HttpClient _httpClient;
         private readonly IDiscountService _discountService;
+        private readonly ISharedIdentityService _sharedIdentityService;
 
-        public BasketService(HttpClient httpClient, IDiscountService discountService)
+        public BasketService(HttpClient httpClient, IDiscountService discountService, ISharedIdentityService sharedIdentityService)
         {
             _httpClient = httpClient;
             _discountService = discountService;
+            _sharedIdentityService = sharedIdentityService;
         }
 
         public async Task AddBasketItem(BasketItemViewModel basketItemViewModel)
@@ -28,10 +31,10 @@ namespace FreeCourse.Web.Services
             }
             else
             {
-                var newBasket = new BasketViewModel();
-                newBasket.BasketItems.Add(basketItemViewModel);
+                basket = new BasketViewModel();
+                basket.BasketItems.Add(basketItemViewModel);
             }
-
+            basket.UserId = _sharedIdentityService.GetUserId;
             await SaveOrUpdate(basket);
         }
 
@@ -41,7 +44,7 @@ namespace FreeCourse.Web.Services
 
             var basket = await Get();
 
-            if (basket == null || basket.DiscountCode == null)
+            if (basket == null)
             {
                 return false;
             }
@@ -53,8 +56,7 @@ namespace FreeCourse.Web.Services
                 return false;
             }
 
-            basket.DiscountRate = hasDiscount.Rate;
-            basket.DiscountCode = hasDiscount.Code;
+            basket.AppliedDiscount(hasDiscount.Code, hasDiscount.Rate);
 
             await SaveOrUpdate(basket);
 
@@ -70,8 +72,9 @@ namespace FreeCourse.Web.Services
                 return false;
             }
 
-            basket.DiscountCode = null;
-            await SaveOrUpdate(basket);
+            basket.CancelDiscount();
+
+            var result = await SaveOrUpdate(basket);
             return true;
         }
 

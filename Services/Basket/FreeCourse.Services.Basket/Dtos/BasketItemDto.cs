@@ -2,7 +2,7 @@
 {
     public class BasketItemDto
     {
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } = 1;
 
         public string CourseId { get; set; }
         public string CourseName { get; set; }
