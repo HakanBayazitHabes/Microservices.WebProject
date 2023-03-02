@@ -30,7 +30,7 @@ namespace FreeCourse.Services.Order.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SsaveOrder(CreateOrderCommand createOrderCommand)
+        public async Task<IActionResult> SaveOrder(CreateOrderCommand createOrderCommand)
         {
             var response = await _mediator.Send(createOrderCommand);
 

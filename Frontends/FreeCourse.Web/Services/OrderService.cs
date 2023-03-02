@@ -46,31 +46,27 @@ namespace FreeCourse.Web.Services
             var orderCreateInput = new OrderCreateInput()
             {
                 BuyerId = _sharedIdentityService.GetUserId,
-                Address = new AddressCreateInput()
-                {
-                    Province = checkoutInfoInput.Province,
-                    District = checkoutInfoInput.District,
-                    Street = checkoutInfoInput.Street,
-                    ZipCode = checkoutInfoInput.ZipCode,
-                    Line = checkoutInfoInput.Line
-                }
+                Address = new AddressCreateInput { Province = checkoutInfoInput.Province, District = checkoutInfoInput.District, Street = checkoutInfoInput.Street, Line = checkoutInfoInput.Line, ZipCode = checkoutInfoInput.ZipCode },
             };
 
             basket.BasketItems.ForEach(x =>
             {
-                var orderItem = new OrderItemCreateInput { ProductId = x.CourseId, Price = x.Price, PictureUrl = "", ProductName = x.CourseName };
+                var orderItem = new OrderItemCreateInput { ProductId = x.CourseId, Price = x.GetCurrentPrice, PictureUrl = "", ProductName = x.CourseName };
                 orderCreateInput.OrderItems.Add(orderItem);
             });
 
-            var response = await _httpClient.PostAsJsonAsync<OrderCreateInput>("orders", orderCreateInput);
+            var response = await _httpClient.PostAsJsonAsync<OrderCreateInput>("order", orderCreateInput);
 
             if (!response.IsSuccessStatusCode)
             {
                 return new OrderCreatedViewModel() { Error = "Sipariş oluşturulamadı", IsSuccessful = false };
             }
 
-            return await response.Content.ReadFromJsonAsync<OrderCreatedViewModel>();
+            var orderCreatedViewModel = await response.Content.ReadFromJsonAsync<Response<OrderCreatedViewModel>>();
 
+            orderCreatedViewModel.Data.IsSuccessful = true;
+            await _basketService.Delete();
+            return orderCreatedViewModel.Data;
         }
 
         public async Task<List<OrderViewModel>> GetOrder()

@@ -26,6 +26,8 @@ builder.Services.AddScoped<ClientCredentialTokenHandler>();
 
 builder.Services.AddHttpClientServices(builder);
 
+
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
 {
     opts.LoginPath = "/Auth/SignIn";
