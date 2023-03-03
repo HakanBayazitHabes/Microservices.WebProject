@@ -39,3 +39,14 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\S
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\FreeCourse.Shared.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\FreeCourse.Shared.pdb
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Automatonymous.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\GreenPipes.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\MassTransit.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\NewId.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net6.0\RabbitMQ.Client.dll
