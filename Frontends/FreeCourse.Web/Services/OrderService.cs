@@ -65,7 +65,7 @@ namespace FreeCourse.Web.Services
             var orderCreatedViewModel = await response.Content.ReadFromJsonAsync<Response<OrderCreatedViewModel>>();
 
             orderCreatedViewModel.Data.IsSuccessful = true;
-            await _basketService.Delete();
+            //await _basketService.Delete();
             return orderCreatedViewModel.Data;
         }
 
@@ -103,12 +103,14 @@ namespace FreeCourse.Web.Services
                 Order = orderCreateInput
             };
 
-            var response = await _httpClient.PostAsJsonAsync<OrderCreateInput>("order", orderCreateInput);
+            var responsePayment = await _paymentService.ReceivePayment(paymentInfoInput);
 
-            if (!response.IsSuccessStatusCode)
+            if (!responsePayment)
             {
                 return new OrderSuspendViewModel() { Error = "Sipariş oluşturulamadı", IsSuccessful = false };
             }
+
+            //await _basketService.Delete();
 
             return new OrderSuspendViewModel() { IsSuccessful = true };
         }
