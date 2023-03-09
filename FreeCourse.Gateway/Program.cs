@@ -1,3 +1,4 @@
+using FreeCourse.Gateway.DelegateHandlers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Ocelot.DependencyInjection;
@@ -6,11 +7,13 @@ using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddHttpClient<TokenExchangeDelegateHandler>();
 //Burada gelen token'ýnda userýn authenticate olmasý gerekmektedir. Bunu filter içerisine atacaðýz. AddContollers içerisinde 
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 //Token içerisinde gelen sub key'ini overload yapmaz
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
-builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme",options =>
+builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
 {
     options.Authority = builder.Configuration["IdentityServerUrl"];
     options.Audience = "resource_gateway";
@@ -18,7 +21,8 @@ builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme",
 });
 
 
-builder.Services.AddOcelot();
+builder.Services.AddOcelot().AddDelegatingHandler<TokenExchangeDelegateHandler>();
+
 builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
 {
     config.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)

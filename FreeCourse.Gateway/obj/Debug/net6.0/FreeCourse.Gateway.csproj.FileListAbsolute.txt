@@ -43,3 +43,4 @@ C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\F
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\FreeCourse.Gateway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\FreeCourse.Gateway\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\FreeCourse.Gateway\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\FreeCourse.Gateway\bin\Debug\net6.0\IdentityModel.dll
