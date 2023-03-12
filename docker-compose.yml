@@ -42,6 +42,21 @@ services:
     build:
       context: .
       dockerfile: Services/FakePayment/FreeCourse.Services.FakePayment/Dockerfile
+  order.api:
+    image: order_api_image
+    build:
+      context: .
+      dockerfile: Services/Order/FreeCourse.Services.Order.API/Dockerfile
+  gateway.api:
+    image: gateway_api_image
+    build:
+      context: .
+      dockerfile: FreeCourse.gateway/Dockerfile
+  aspnetcoremvc.web:
+    image: aspnetcoremvc.web_image
+    build:
+      context: .
+      dockerfile: Frontends/FreeCourse.Web/Dockerfile
 volumes:
   catalogdb_volume:
   discount_volume:
