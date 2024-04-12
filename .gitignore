@@ -478,3 +478,4 @@ $RECYCLE.BIN/
 **/bin/
 **/obj/
 **/assets.cache
+**/.vs/
