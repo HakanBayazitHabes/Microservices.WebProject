@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = FreeCourse.Shared
-build_property.ProjectDir = C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\Shared\FreeCourse.Shared\
+build_property.ProjectDir = /Users/hakanbayazithabes/Desktop/Software/Asp.Net Core/Microservices.WebProject/Shared/FreeCourse.Shared/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

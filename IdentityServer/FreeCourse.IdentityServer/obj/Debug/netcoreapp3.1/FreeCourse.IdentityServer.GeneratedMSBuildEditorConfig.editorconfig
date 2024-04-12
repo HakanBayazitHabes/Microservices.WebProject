@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = FreeCourse.IdentityServer
-build_property.ProjectDir = C:\Users\user\Desktop\Software\FatihCakırogluCore\Microservices\Microservices\IdentityServer\FreeCourse.IdentityServer\
+build_property.ProjectDir = /Users/hakanbayazithabes/Desktop/Software/Asp.Net Core/Microservices.WebProject/IdentityServer/FreeCourse.IdentityServer/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
